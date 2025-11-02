@@ -190,6 +190,9 @@
       currentColor
     );
   }
+  html {
+    background-color: var(--color-primary-driftsand);
+  }
 }
 
 @layer components {

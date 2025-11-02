@@ -6,12 +6,12 @@ import ButtonOrange from "./ButtonOrange.astro";
 import "../styles/tailwind.css";
 ---
 
-<div class="flex flex-row items-center justify-between mr-[40px] m-[40px] h-[75px] place-it">
+<div class="grid grid-row-3 lg:grid lg:grid-cols-3 gap-10 place-items-center justify-self-center w-[100%] lg:h-[100px] h-[75px] mb-40 lg:fixed z-1 bg-primary-driftsand">
   <div id="logo">
-    <LogoWeb />
+    <a href="/"><LogoWeb /></a>
   </div>
   <div id="search-bar">
-    <div class="w-[509px] h-9 rounded-[4px] border border-[#9c9073] flex items-center gap-2">
+    <div class="w-[209px] lg:w-[509px] h-9 rounded-[4px] border border-[#9c9073] flex items-center gap-2">
       <Image src="/assets/search-icon.svg" alt="search" width="16" height="16" />
       <p class="p-mobile">search...</p>
     </div>
@@ -29,7 +29,7 @@ import "../styles/tailwind.css";
           ><Image src="/assets/arrow-up.svg" alt="arrow-down" width="10" height="10" /></span
         ></a
       >
-      <ButtonOrange text=infomøde></ButtonOrange>
+      <ButtonOrange href="infoside" text=infomøde></ButtonOrange>
     </div>
     <div></div>
   </div>
